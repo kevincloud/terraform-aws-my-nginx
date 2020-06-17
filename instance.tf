@@ -6,4 +6,8 @@ resource "aws_instance" "module_instance" {
     user_data = templatefile("${path.module}/scripts/install.sh", {})
     subnet_id = var.subnet_id
     iam_instance_profile = var.profile_id
+    
+    tags = {
+        environment = "dev"
+    }
 }
