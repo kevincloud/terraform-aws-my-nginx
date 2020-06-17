@@ -8,7 +8,7 @@ resource "aws_instance" "module_instance" {
     iam_instance_profile = var.profile_id
     
     tags = {
-        environment = ""
+        environment = "development"
         department = "Engineering"
     }
 }
