@@ -9,5 +9,6 @@ resource "aws_instance" "module_instance" {
     
     tags = {
         environment = ""
+        department = "Engineering"
     }
 }
