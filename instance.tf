@@ -7,7 +7,7 @@ resource "aws_instance" "module_instance" {
     subnet_id = var.subnet_id
     iam_instance_profile = var.profile_id
     
-    tags {
+    tags = {
         environment = "dev"
     }
 }
