@@ -4,3 +4,6 @@ variable "instance_size" { }
 variable "profile_id" { }
 variable "sg_id" { }
 variable "subnet_id" { }
+variable "tags" {
+    type = map(string)
+}
